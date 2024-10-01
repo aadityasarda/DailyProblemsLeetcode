@@ -1,1 +1,14 @@
+Problem statement - In this problem we have given an input array which is even and we have to find pairs such that all the pairs are divisible by k 
+contraints :
+Constraints:
 
+arr.length == n
+1 <= n <= 10^5
+n is even.
+-10^9 <= arr[i] <= 10^9
+1 <= k <= 10^5
+
+Thought Process : 
+say (a+b)%k==0
+then a%k + b%k ==0
+so we created a array of remainders which stores the remainders of all the values now store it to map which helps in to find the remaining part of the remainder of one element
